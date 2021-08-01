@@ -1,0 +1,61 @@
+Verbs
+
+i:	insert before the cursor
+a:	append after the cursor
+I:	insert at the beginning of the line
+A:	append at the end of the line
+o:	open a new line below the current one
+O:	open a new line above the current one
+r:	replace the one character under your cursor
+R:	replace the character under your cursor, but just keep typing afterwards
+cm:	change whatever you define as a movement, e.g. a word, or a sentence, or a paragraph.
+C:	change the current line from where you're at
+ct?:	change up to the question mark
+s:	substitute from where you are to the next command (noun)
+S:	substitute the entire current line
+
+y(copy selection) yy(copy line) d(delete char) dd(delete line) p(paste)
+u(undo) ctrl-r(redo)
+
+Moving Cursor
+
+j:	move down one line
+k:	move up one line
+h:	move left one character
+l:	move right one character
+0:	move to the beginning of the line
+$:	move to the end of the line
+w:	move forward one word
+b:	move back one word
+e:	move to the end of your word
+):	move forward one sentence
+}:	move forward one paragraph
+:ln:	move to a given line number
+H:	move to the top of the screen
+M:	move to the middle of the screen
+L:	move to the bottom of the screen
+gg:	go to the top of the file
+G:	go to the bottom of the file
+Ctl-i:	jump to your previous navigation location
+Ctl-o:	jump back to where you were
+
+Substitute
+
+:[range]s/{pattern}/{string}/[flags] [count]
+:%s/{pattern}/{string}/g
+:ln1,ln2s/{pattern}/{string}/g
+:s/{pattern}/{string}
+:%s/ \+/\t/g  {string} multiple occurences of spaces by one tab
+:noh (disable highlighting)
+
+Split Window Ctrl-w
+
+h(new horizontal) s(new vertical) h,j,k,l(switch)
+
+Macros
+
+:q[a-z] :q :@[a-z]
+
+Repetition
+. (dot) = last action
+:%norm . (% = for each line, norm = type the following command) . (Last action)

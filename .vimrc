@@ -6,6 +6,8 @@ set hlsearch
 set ignorecase
 set incsearch
 set cursorline
+set list
+set listchars=tab:!·,trail:·
 " Cursor
 hi clear CursorLine
 hi link CursorLine CursorColumn
