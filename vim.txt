@@ -55,6 +55,7 @@ SUBSTITUTE (FIND & REPLACE)
 :%s/ \+/\t/g  {string} multiple occurences of spaces by one tab
 :noh (disable highlighting)
 
+
 SPLIT WINDOWS (Ctrl-w)
 ======================
 h(new horizontal) s(new vertical) h,j,k,l(switch)
@@ -67,5 +68,6 @@ EXECUTE (NORM)
 ==============
 :%norm . (% = for each line, norm = type the following command) . (Last action)
 
-
+:[range]g/pattern/cmd
+:g/^\s*$/d (delete all blank lines)
 
