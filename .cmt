@@ -1,0 +1,17 @@
+# The input parts
+{
+    # Shows a list of options
+    "Type" = [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "test",
+        "chore"
+    ]
+    "Message" = @ # Single line input
+}
+
+${Type} (${Message}) : $(yolo)
+
