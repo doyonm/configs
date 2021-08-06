@@ -13,5 +13,5 @@
     "Message" = @ # Single line input
 }
 
-${Type} (${Message}) : $(yolo)
+${Type} (${Message}) : ${*}
 
