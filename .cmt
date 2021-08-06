@@ -11,6 +11,7 @@
         "chore"
     ]
     "Scope" = @ # Single line input
+    "Message" = @
 }
 
 ${Type} (${Scope}) : ${Message} - ${*}
