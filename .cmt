@@ -10,8 +10,8 @@
         "test",
         "chore"
     ]
-    "Message" = @ # Single line input
+    "Scope" = @ # Single line input
 }
 
-${Type} (${Message}) : ${*}
+${Type} (${Scope}) : ${Message} - ${*}
 
