@@ -8,7 +8,7 @@ o	open a new line below the current one
 O	open a new line above the current one
 r	replace the one character under your cursor
 R	replace the character under your cursor, but just keep typing afterwards
-cm	change whatever you define as a movement, e.g. a word, or a sentence, or a paragraph.
+cm	change whatever you define as a movement
 C	change the current line from where you're at
 ct?	change up to the question mark
 s	substitute from where you are to the next command (noun)
@@ -68,6 +68,8 @@ EXECUTE (NORM)
 ==============
 :%norm . (% = for each line, norm = type the following command) . (Last action)
 
+GLOBAL
+======
 :[range]g/pattern/cmd
 :g/^\s*$/d (delete all blank lines)
 
