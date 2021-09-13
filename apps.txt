@@ -11,4 +11,5 @@ UdeMFavorites|https://localhost:3001/static/js/bundle.js
 UdeMReferenceContent|https://localhost:3002/static/js/bundle.js
 UdeMOneDrive|https://localhost:3011/static/js/bundle.js
 UdeMEvents|https://localhost:3000/static/js/main.bundle.js
+UdeMAssistant|https://localhost:3000/static/js/bundle.js
 
