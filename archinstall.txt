@@ -1,4 +1,4 @@
-sudo pacman -X video xorg xorg-init base-devel neofetch vim git picom feh alacritty firefox rofi rust thunar mc avahi nss-mdns openssh
+sudo pacman -X xf86-video-fbdev xorg xorg-init base-devel neofetch vim git picom feh alacritty firefox rofi rust thunar mc avahi nss-mdns openssh
 
 mkdir git && cd git
 
