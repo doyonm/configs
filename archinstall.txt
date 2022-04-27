@@ -2,7 +2,11 @@ sudo pacman -X xf86-video-fbdev xorg xorg-xinit base-devel neofetch vim git pico
 
 mkdir git && cd git
 
+git clone https://github.com/doyonm/TYSLWMTheme.git
+git clone https://github.com/doyonm/configs.git
+
 git clone https://aur.archlinux.org/leftwm.git
+git clone https://aur.archlinux.org/polybar.git
 git clone https://aur.archlinux.org/brave-bin.git
 
 cp /etc/X11/xinit/xinitrc .xinitrc
