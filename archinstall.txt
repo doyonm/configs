@@ -1,0 +1,12 @@
+sudo pacman -X video xorg xorg-init base-devel neofetch vim git picom feh alacritty firefox rofi rust thunar mc avahi nss-mdns openssh
+
+mkdir git && cd git
+
+git clone https://aur.archlinux.org/leftwm.git
+git clone https://aur.archlinux.org/brave-bin.git
+
+cp /etc/X11/xinit/xinitrc .xinitrc
+
+nitrogen --restore &
+picom &
+exec leftwm
