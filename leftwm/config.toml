@@ -5,7 +5,7 @@ workspaces = []
 tags = ["α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι"]
 
 #layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
-layouts = ["MainAndVertStack", "MainAndHorizontalStack", "Monocle"]
+layouts = ["MainAndVertStack", "MainAndHorizontalStack", "GridHorizontal", "Monocle"]
 layout_mode = "Workspace"
 scratchpad = []
 disable_current_tag_swap = true
@@ -29,6 +29,11 @@ command = "Execute"
 value = "alacritty"
 modifier = ["modkey", "Shift"]
 key = "Return"
+
+[[keybind]]
+command = "Execute"
+value = "ksnip"
+key = "PrintScr"
 
 [[keybind]]
 command = "Execute"
