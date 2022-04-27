@@ -32,7 +32,7 @@ key = "Return"
 
 [[keybind]]
 command = "Execute"
-value = "nautilus"
+value = "thunar"
 modifier = ["modkey"]
 key = "f"
 
