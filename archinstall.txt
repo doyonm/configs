@@ -2,8 +2,16 @@ Install Archlinux with archinstall script using minimal setup
 
 Additional packages
 
-xf86-video-fbdev xorg xorg-xinit base-devel neofetch vim git picom feh alacritty rofi rust thunar mc avahi nss-mdns openssh unzip wget thunar-archive-plugin file-roller gtk3
+xf86-video-fbdev* xorg xorg-xinit base-devel neofetch vim git picom feh alacritty rofi rust thunar mc avahi nss-mdns openssh unzip wget thunar-archive-plugin file-roller gtk3
 
+* video driver for a VM
+
+local/xf86-input-libinput 1.2.1-1 (xorg-drivers)
+local/xf86-video-amdgpu 22.0.0-1 (xorg-drivers)
+local/xf86-video-ati 1:19.1.0.r9.g5eba006e-2 (xorg-drivers)
+local/xf86-video-nouveau 1.0.17-2 (xorg-drivers)
+local/xf86-video-vmware 13.3.0-3 (xorg-drivers)
+    
 reboot and login to sudoer account
 
 mkdir git && cd git
