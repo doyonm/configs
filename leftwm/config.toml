@@ -32,11 +32,6 @@ key = "Return"
 
 [[keybind]]
 command = "Execute"
-value = "ksnip"
-key = "PrintScr"
-
-[[keybind]]
-command = "Execute"
 value = "thunar"
 modifier = ["modkey"]
 key = "f"
