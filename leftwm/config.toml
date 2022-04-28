@@ -2,7 +2,7 @@ modkey = "Mod4"
 mousekey = "Mod4"
 workspaces = []
 
-tags = ["α", "β", "γ", "δ", "ε", "ζ", "η", "θ", "ι"]
+tags = ["⠢", "⡈", "⡌", "⢬", "⣣", "⣺", "⣟", "⣿"]
 
 #layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
 layouts = ["MainAndVertStack", "MainAndHorizontalStack", "GridHorizontal", "Monocle"]
