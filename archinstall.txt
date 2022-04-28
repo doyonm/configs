@@ -2,7 +2,7 @@ Install Archlinux with archinstall script using minimal setup
 
 Additional packages
 
-xf86-video-fbdev* xorg xorg-xinit base-devel neofetch vim git picom feh alacritty rofi rust thunar mc avahi nss-mdns openssh unzip wget thunar-archive-plugin file-roller gtk3
+xf86-video-fbdev* xorg xorg-xinit base-devel htop neofetch vim git picom feh alacritty rofi rust file-roller thunar thunar-archive-plugin mc avahi nss-mdns openssh wget gtk3
 
 * video driver for a VM
 
@@ -22,15 +22,14 @@ git clone https://github.com/doyonm/TYSLWMTheme.git
 git clone https://github.com/doyonm/configs.git
 
 # Install AUR packages (makepkg -si)
-git clone https://aur.archlinux.org/leftwm.git
-git clone https://aur.archlinux.org/polybar.git
-git clone https://aur.archlinux.org/brave-bin.git
+git clone https://aur.archlinux.org/paru.git
+
+paru -S leftwm polybar brave-bin
 
 cp /etc/X11/xinit/xinitrc .xinitrc
 vim .xinitrc
 # comment last 5 lines (xwm, xclock xterm)
-picom &
-exec leftwm
+exec dbus-launch leftwm
 
 # Set Locale
 vim /etc/locale.gen
@@ -40,7 +39,7 @@ vim /etc/locale.conf
 LANG=fr_CA.UTF-8
 
 # Install Fonts
-sudo pacm -S noto-fonts noto-fonts-extra adobe-source-code-pro-fonts cantarell-fonts gnu-free-fonts gsfonts ttf-dejavu
+sudo pacman S noto-fonts noto-fonts-extra adobe-source-code-pro-fonts cantarell-fonts gnu-free-fonts gsfonts ttf-dejavu
 fc-cache
 
 # Hack fonts
@@ -61,6 +60,3 @@ Shit+Super <Left> | <Right> Resize Master View
 Super <b> (Open Brave)
 Super <f> (Open thunar)
 
-# TODO
-# Nordic-Darker Icons
-tar -xvf 
