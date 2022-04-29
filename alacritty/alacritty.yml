@@ -28,4 +28,22 @@ colors:
     magenta: '#b294bb'
     cyan:    '#93e0e3'
     white:   '#ffffff'
+font:
+    normal:
+        family: hack
+        style: Regular
+
+    bold:
+        family: hack
+        style: Bold
+
+    italic:
+        family: hack
+        style: Italic
+
+    bold_italic:
+        family: hack
+        style: Bold Italic
+
+    size: 11
 
