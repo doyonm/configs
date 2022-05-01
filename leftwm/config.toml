@@ -4,8 +4,8 @@ workspaces = []
 
 tags = ["☰","☱","☲","☴","☳","☵","☶","☷"]
 
-#layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
-layouts = ["MainAndVertStack", "MainAndHorizontalStack", "GridHorizontal", "Monocle"]
+layouts = ["MainAndVertStack", "MainAndHorizontalStack", "MainAndDeck", "GridHorizontal", "EvenHorizontal", "EvenVertical", "Fibonacci", "CenterMain", "CenterMainBalanced", "Monocle", "RightWiderLeftStack", "LeftWiderRightStack"]
+#layouts = ["MainAndVertStack", "MainAndHorizontalStack", "GridHorizontal", "Monocle"]
 layout_mode = "Workspace"
 scratchpad = []
 disable_current_tag_swap = true
