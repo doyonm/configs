@@ -279,4 +279,47 @@ value = "5"
 modifier = ["modkey","Shift"]
 key = "Left"
 
+[[keybind]]
+command = "Execute"
+value = "pulseaudio-control --volume-max 130 up"
+modifier = []
+key = "XF86XK_AudioRaiseVolume"
+
+[[keybind]]
+command = "Execute"
+value = "pulseaudio-control --volume-max 130 down"
+modifier = []
+key = "XF86XK_AudioLowerVolume"
+
+[[keybind]]
+command = "Execute"
+value = "pulseaudio-control togmute"
+modifier = []
+key = "XF86XK_AudioMute"
+
+[[keybind]]
+command = "Execute"
+value = "cmus-remote -u"
+modifier = []
+key = "XF86XK_AudioPlay"
+
+[[keybind]]
+command = "Execute"
+value = "cmus-remote -r"
+modifier = []
+key = "XF86XK_AudioPrev"
+
+[[keybind]]
+command = "Execute"
+value = "cmus-remote -n"
+modifier = []
+key = "XF86XK_AudioNext"
+
+[[keybind]]
+command = "Execute"
+value = "~/.config/leftwm/themes/current/scripts/start-cmus.sh"
+modifier = []
+key = "XF86XK_Tools"
+
+
 
