@@ -321,5 +321,9 @@ value = "~/.config/leftwm/themes/current/scripts/start-cmus.sh"
 modifier = []
 key = "XF86XK_Tools"
 
-
+[[keybind]]
+command = "Execute"
+value = "import -window root ~/Images/Screenshots/$(date '+%Y%m%d-%H%M%S').png"
+modifier = ["modkey", "Control"]
+key = "p"
 

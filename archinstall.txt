@@ -4,6 +4,10 @@ Additional packages
 
 xf86-video-fbdev* xorg xorg-xinit base-devel htop neofetch vim git picom feh alacritty rofi rust file-roller thunar thunar-archive-plugin mc avahi nss-mdns openssh wget gtk3
 
+xautolock
+xss-lock
+slock
+
 * video driver for a VM
 
 local/xf86-input-libinput 1.2.1-1 (xorg-drivers)
