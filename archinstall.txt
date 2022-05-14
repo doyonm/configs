@@ -2,45 +2,18 @@ Install Archlinux with archinstall script using minimal setup
 
 Additional packages
 
-xf86-video-fbdev* xorg xorg-xinit base-devel htop neofetch vim git picom feh alacritty rofi rust file-roller thunar thunar-archive-plugin mc avahi nss-mdns openssh wget gtk3
-
-xautolock
-xss-lock
-slock
-
-* video driver for a VM
-
-local/xf86-input-libinput 1.2.1-1 (xorg-drivers)
-local/xf86-video-amdgpu 22.0.0-1 (xorg-drivers)
-local/xf86-video-ati 1:19.1.0.r9.g5eba006e-2 (xorg-drivers)
-local/xf86-video-nouveau 1.0.17-2 (xorg-drivers)
-local/xf86-video-vmware 13.3.0-3 (xorg-drivers)
-    
-reboot and login to sudoer account
-
-mkdir git && cd git
-
-# Leftwm Theme
-git clone https://github.com/doyonm/TYSLWMTheme.git
-# Config files
-git clone https://github.com/doyonm/configs.git
-
-# Install AUR packages (makepkg -si)
-git clone https://aur.archlinux.org/paru.git
-
-paru -S leftwm polybar brave-bin
-
-cp /etc/X11/xinit/xinitrc .xinitrc
-vim .xinitrc
-# comment last 5 lines (xwm, xclock xterm)
-exec dbus-launch leftwm
+git htop vim wget mc
 
 # Set Locale
 vim /etc/locale.gen
+uncomment fr_CA.UTF-8
 locale-gen
 
 vim /etc/locale.conf
 LANG=fr_CA.UTF-8
+
+# xorg
+xf86-video-fbdev* xorg xorg-xinit picom feh alacritty rofi polybar file-roller thunar thunar-archive-plugin thunar-volman gtk3 
 
 # Install Fonts
 sudo pacman S noto-fonts noto-fonts-extra adobe-source-code-pro-fonts cantarell-fonts gnu-free-fonts gsfonts ttf-dejavu
@@ -49,6 +22,38 @@ fc-cache
 # Hack fonts
 wget https://github.com/source-foundry/Hack/releases/download/v3.003/Hack-v3.003-ttf.zip
 unzip Hack-v3.003-ttf.zip
+sudo cp Hack-v3.003-ttf/*.ttf /usr/share/fonts/TTF
+fc-cache
+
+* video driver list
+
+local/xf86-input-libinput 1.2.1-1 (xorg-drivers)
+local/xf86-video-amdgpu 22.0.0-1 (xorg-drivers)
+local/xf86-video-ati 1:19.1.0.r9.g5eba006e-2 (xorg-drivers)
+local/xf86-video-nouveau 1.0.17-2 (xorg-drivers)
+local/xf86-video-vmware 13.3.0-3 (xorg-drivers)
+
+# avahi
+
+avahi nss-mdns openssh
+
+mkdir git && cd git
+
+# Install AUR packages (makepkg -si)
+git clone https://aur.archlinux.org/paru.git
+
+# Leftwm Theme
+git clone https://github.com/doyonm/TYSLWMTheme.git
+
+# Config files
+git clone https://github.com/doyonm/configs.git
+
+paru -S leftwm brave-bin
+
+cp /etc/X11/xinit/xinitrc .xinitrc
+vim .xinitrc
+# comment last 5 lines (xwm, xclock xterm)
+exec leftwm
 
 # leftwm config
 mkdir .config/leftwm/themes
@@ -56,6 +61,7 @@ mkdir .config/leftwm/themes
 cd .config/leftwm/themes
 ln -s /home/doyonm/git/TYSLWMTheme current
 
+reboot
 startx
 
 # Leftwm additionals key binding
@@ -63,4 +69,3 @@ Shit+Super <Enter> (Open alacritty)
 Shit+Super <Left> | <Right> Resize Master View
 Super <b> (Open Brave)
 Super <f> (Open thunar)
-
