@@ -13,7 +13,7 @@ vim /etc/locale.conf
 LANG=fr_CA.UTF-8
 
 # xorg
-xf86-video-fbdev* xorg xorg-xinit picom feh alacritty rofi polybar file-roller thunar thunar-archive-plugin thunar-volman gtk3 
+xf86-video-fbdev* xorg xorg-xinit picom feh alacritty rofi polybar xfce4-settings file-roller thunar thunar-archive-plugin thunar-volman gtk3 
 
 # Install Fonts
 sudo pacman S noto-fonts noto-fonts-extra adobe-source-code-pro-fonts cantarell-fonts gnu-free-fonts gsfonts ttf-dejavu
