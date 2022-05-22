@@ -28,6 +28,9 @@ fc-cache
 JetBrains Mono Font
 https://www.jetbrains.com/fr-fr/lp/mono/
 
+JetBrains Nerd Font Mono
+https://aur.archlinux.org/packages/nerd-fonts-jetbrains-mono
+
 MaterialIcon
 git clone https://github.com/google/material-design-icons/
 
