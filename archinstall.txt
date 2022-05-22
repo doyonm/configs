@@ -25,6 +25,9 @@ unzip Hack-v3.003-ttf.zip
 sudo cp Hack-v3.003-ttf/*.ttf /usr/share/fonts/TTF
 fc-cache
 
+JetBrains Mono Font
+https://www.jetbrains.com/fr-fr/lp/mono/
+
 * video driver list
 
 local/xf86-input-libinput 1.2.1-1 (xorg-drivers)
