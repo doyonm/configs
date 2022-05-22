@@ -28,6 +28,9 @@ fc-cache
 JetBrains Mono Font
 https://www.jetbrains.com/fr-fr/lp/mono/
 
+MaterialIcon
+git clone https://github.com/google/material-design-icons/
+
 * video driver list
 
 local/xf86-input-libinput 1.2.1-1 (xorg-drivers)
